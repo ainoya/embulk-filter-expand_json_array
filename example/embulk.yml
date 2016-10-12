@@ -1,0 +1,24 @@
+in:
+  type: file
+  path_prefix: ./data.tsv
+  parser:
+    type: csv
+    delimiter: "\t"
+    charset: UTF-8
+    newline: CRLF
+    null_string: 'NULL'
+    skip_header_lines: 1
+    comment_line_marker: '#'
+    columns:
+      - {name: time,  type: timestamp, format: "%Y-%m-%d"}
+      - {name: id, type: long}
+      - {name: name, type: string}
+      - {name: score, type: double}
+      - {name: json_payload, type: string}
+filters:
+  - type: expand_json_array
+    json_column_name: json_payload
+    root: "$.latest_receipt_info"
+    expanded_column_name: latest_receipt_info
+out:
+  type: stdout
