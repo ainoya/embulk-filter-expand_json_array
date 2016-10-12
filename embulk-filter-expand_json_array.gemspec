@@ -1,13 +1,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "embulk-filter-expand_json_array"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Naoki AINOYA"]
   spec.summary       = "Expand Json Array filter plugin for Embulk"
   spec.description   = "Expand Json Array"
   spec.email         = ["ainonic@gmail.com"]
   spec.licenses      = ["MIT"]
-  # TODO set this: spec.homepage      = "https://github.com/ainonic/embulk-filter-expand_json_array"
+  spec.homepage      = "https://github.com/ainoya/embulk-filter-expand_json_array"
 
   spec.files         = `git ls-files`.split("\n") + Dir["classpath/*.jar"]
   spec.test_files    = spec.files.grep(%r{^(test|spec)/})
