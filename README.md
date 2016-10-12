@@ -1,4 +1,4 @@
-# Expand Json Array filter plugin for Embulk
+# Expand Json Array filter plugin for Embulk [![Gem Version](https://badge.fury.io/rb/embulk-filter-expand_json_array.svg)](https://badge.fury.io/rb/embulk-filter-expand_json_array)
 
 ## Overview
 
